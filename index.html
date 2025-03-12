@@ -1,20 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <title>Planetary Data Table</title>
- 
-  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* Basic page setup */
+    body {
+      margin: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header, footer {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Table styling */
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 0 auto; /* Center the table */
+      background-color: #fff;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #4a69bd;
+      color: #fff;
+    }
+
+    /* Make planet names italic + bold */
+    .planet-name {
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    /* Ensure images don’t overpower the table */
+    td img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    /* Simple styling for links in footer */
+    footer p {
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #4a69bd;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <h1>Planetary Data</h1>
-    <p>Combining data for Mercury, Venus, Earth, and Mars into a single table.</p>
+    <p>Mercury, Venus, Earth, and Mars</p>
   </header>
 
   <main>
-
     <table id="planet-data">
       <thead>
         <tr>
